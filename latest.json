@@ -1,13 +1,13 @@
 {
-  "version": "2.3.2",
-  "tag": "v2.3.2",
-  "releasedAt": "2026-11-01T09:23:41.290676Z",
+  "version": "2.4.0",
+  "tag": "v2.4.0",
+  "releasedAt": "2026-11-01T13:56:25.423478Z",
   "minimumSystemVersion": "13.0",
-  "notes": "MirrorX 2.3.2\n\n- 新增自動更新：從公開通道下載更新包，驗證大小、SHA-256、App 版本、架構及簽章後替換舊版；安裝失敗時嘗試還原。\n- 更新提示顯示目前版本與更新說明，並提供下載與安裝進度；發行頁改為可點擊的超連結。\n- 修正「登入時自動啟動」：改用使用者 LaunchAgent，支援 ad-hoc 簽章的 MirrorX。\n- 發布流程同步公開更新清單與 DMG，並在更新通道指標前回下載驗證。\n\n支援 macOS 13 以上，包含 Apple Silicon 與 Intel 架構。",
+  "notes": "MirrorX 2.4.0\n\n- 新增 Apple Silicon 動態顯示尺寸覆寫，修正僅寫入覆寫檔、重開機後尺寸仍不變的問題。\n- 在「顯示器外觀」啟用動態尺寸後即時套用，回讀系統尺寸確認生效；App 啟動或顯示器重連時恢復已儲存的設定。\n- 「清除尺寸」與「全部還原原廠」會撤除動態覆寫；套用失敗時嘗試回復並回報驗證結果。\n- 修正 Apple Silicon 原始 EDID 讀取路徑，並在外觀診斷顯示 EDID 取得與檢查碼狀態。\n- 保留 Intel／AMD 原生驅動的檔案覆寫流程；NullMoth、年週檔與同型號多台仍不開放尺寸修改。\n\n動態覆寫為實驗功能，套用或還原時螢幕可能短暫黑屏。系統尺寸可能因 EDID 精度略有差異；重開機後須讓 MirrorX 啟動才會恢復設定。舊設定不會自動啟用動態覆寫。\n\n支援 macOS 13 以上，包含 Apple Silicon 與 Intel 架構。動態尺寸已在 M4 Pro 搭配 LG 32UL950 實測套用、還原與 App 重新啟動恢復；整機重新開機後的恢復尚未驗收。",
   "dmg": {
-    "name": "MirrorX-2.3.2.dmg",
-    "url": "https://github.com/michelle0812/mirrorx-releases/releases/download/v2.3.2/MirrorX-2.3.2.dmg",
-    "size": 3090125,
-    "sha256": "c74a5ec3d5214b22b6b535682925637a090ef2927069251f9975401a92f57af9"
+    "name": "MirrorX-2.4.0.dmg",
+    "url": "https://github.com/michelle0812/mirrorx-releases/releases/download/v2.4.0/MirrorX-2.4.0.dmg",
+    "size": 3159436,
+    "sha256": "d36420d6eca27e107b82dfceba5d0fd7ec18df3245a99e0a4ba744bcc123d6cd"
   }
 }
