@@ -1,13 +1,13 @@
 {
   "version": "2.3.2",
   "tag": "v2.3.2",
-  "releasedAt": "2026-11-01T09:11:28.853518Z",
+  "releasedAt": "2026-11-01T09:23:41.290676Z",
   "minimumSystemVersion": "13.0",
-  "notes": "MirrorX 2.3.2\n\n- 新增自動更新：從公開通道下載更新包，驗證大小、SHA-256、App 版本、架構及簽章後替換舊版；安裝失敗時嘗試還原。\n- 更新提示顯示目前版本與更新說明，並提供下載與安裝進度。\n- 修正「登入時自動啟動」：改用使用者 LaunchAgent，支援 ad-hoc 簽章的 MirrorX。\n- 發布流程同步公開更新清單與 DMG，並在更新通道指標前回下載驗證。\n\n支援 macOS 13 以上，包含 Apple Silicon 與 Intel 架構。",
+  "notes": "MirrorX 2.3.2\n\n- 新增自動更新：從公開通道下載更新包，驗證大小、SHA-256、App 版本、架構及簽章後替換舊版；安裝失敗時嘗試還原。\n- 更新提示顯示目前版本與更新說明，並提供下載與安裝進度；發行頁改為可點擊的超連結。\n- 修正「登入時自動啟動」：改用使用者 LaunchAgent，支援 ad-hoc 簽章的 MirrorX。\n- 發布流程同步公開更新清單與 DMG，並在更新通道指標前回下載驗證。\n\n支援 macOS 13 以上，包含 Apple Silicon 與 Intel 架構。",
   "dmg": {
     "name": "MirrorX-2.3.2.dmg",
     "url": "https://github.com/michelle0812/mirrorx-releases/releases/download/v2.3.2/MirrorX-2.3.2.dmg",
-    "size": 3088912,
-    "sha256": "5e446f7024df4edcd1ccf23eb9b8dc74ca51b17784dbfa287d7d6a3e319374d6"
+    "size": 3090125,
+    "sha256": "c74a5ec3d5214b22b6b535682925637a090ef2927069251f9975401a92f57af9"
   }
 }
