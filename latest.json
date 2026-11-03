@@ -1,13 +1,13 @@
 {
-  "version": "2.4.1",
-  "tag": "v2.4.1",
-  "releasedAt": "2026-11-02T00:14:22.815964Z",
+  "version": "2.5.0",
+  "tag": "v2.5.0",
+  "releasedAt": "2026-11-03T11:27:23.916890Z",
   "minimumSystemVersion": "13.0",
-  "notes": "MirrorX 2.4.1\n\n- 修正將 31.5 吋誤判為已達到設定的 32 吋，導致略過動態尺寸套用的問題。\n- Apple Silicon 動態尺寸加入 macOS 整數 DPI 取整補償；選擇最接近理想寬高的公分宣告，每軸偏差不超過 5%，DTD 仍保留理想公釐尺寸，不修改解析度或時序。\n- 生效驗證改為系統回讀尺寸與目標的一位小數相符；未達標會回復，錯誤訊息同時列出實際與目標吋數。\n\nMac Studio M4 Max 搭配 Kuycon G32P（名稱覆寫為 Pro Display XDR）實測：設定 32 吋後，系統由 31.5 吋改為 32.0 吋（原始回讀 32.023 吋），維持 6144×3456 輸出與 3072×1728 HiDPI。尺寸補償是系統宣告值，不是面板實際尺寸量測；其他螢幕仍以套用後回讀為準。\n\n動態尺寸仍為實驗功能，套用可能短暫黑屏；須啟用動態尺寸並讓 MirrorX 在登入後啟動，才能在 App 啟動／螢幕重連後恢復。整機重新開機後的恢復尚未驗收。\n\n支援 macOS 13 以上，包含 Apple Silicon 與 Intel 架構。尺寸與外觀回歸自測 172 項、公開發布流程離線測試 17 項通過。已實測先還原至 31.5 吋，再啟動 2.4.1 自動恢復至 32.0 吋。",
+  "notes": "# MirrorX 2.5.0\n\n新增「滑鼠滾輪…」設定，可為指定滑鼠反轉上下捲動。PRO 2 LIGHTSPEED 已完成實機驗收。\n\n- 按「辨識滑鼠…」後捲動目標滑鼠，確認來源、填入名稱，再儲存並啟用反轉。\n- 各裝置可獨立開關；水平捲動、觸控板與其他未設定裝置維持原樣。\n- 規則自動儲存並在 MirrorX 啟動時讀回；關閉 MirrorX 即恢復系統捲動方向。\n- 需要 macOS「輔助使用」權限。來源不明或缺少必要介面時不更改捲動。\n- 無序號接收器以 USB 連接埠辨識，換孔後需重新辨識；接收器名稱可能只顯示 USB Receiver。\n\n同時修正發行清單在同步站點時重新產生時間戳的問題，所有發行站使用同一份 DMG、latest.json 與 SHA256SUMS。\n\n支援 macOS 13 以上，包含 Apple Silicon 與 Intel 雙架構。474 項 App 自測與 24 項發行流程測試通過。此版本使用動態載入的 HID 私有介面，未來 macOS 更新後可能需要調整。",
   "dmg": {
-    "name": "MirrorX-2.4.1.dmg",
-    "url": "https://github.com/michelle0812/mirrorx-releases/releases/download/v2.4.1/MirrorX-2.4.1.dmg",
-    "size": 3182842,
-    "sha256": "20eec9ddaf0620a0109e518482cdd419ca7ce4adc4c39d70ebb5263cd984eb7b"
+    "name": "MirrorX-2.5.0.dmg",
+    "url": "https://github.com/michelle0812/mirrorx-releases/releases/download/v2.5.0/MirrorX-2.5.0.dmg",
+    "size": 3302415,
+    "sha256": "0330d76d129c58240ac680bddfabb61c23398453fc3f2632ebf5d52410b83f7f"
   }
 }
