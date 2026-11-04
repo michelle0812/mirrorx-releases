@@ -1,13 +1,13 @@
 {
-  "version": "2.5.0",
-  "tag": "v2.5.0",
-  "releasedAt": "2026-11-03T11:27:23.916890Z",
+  "version": "2.5.3",
+  "tag": "v2.5.3",
+  "releasedAt": "2026-11-04T00:02:09.712600Z",
   "minimumSystemVersion": "13.0",
-  "notes": "# MirrorX 2.5.0\n\n新增「滑鼠滾輪…」設定，可為指定滑鼠反轉上下捲動。PRO 2 LIGHTSPEED 已完成實機驗收。\n\n- 按「辨識滑鼠…」後捲動目標滑鼠，確認來源、填入名稱，再儲存並啟用反轉。\n- 各裝置可獨立開關；水平捲動、觸控板與其他未設定裝置維持原樣。\n- 規則自動儲存並在 MirrorX 啟動時讀回；關閉 MirrorX 即恢復系統捲動方向。\n- 需要 macOS「輔助使用」權限。來源不明或缺少必要介面時不更改捲動。\n- 無序號接收器以 USB 連接埠辨識，換孔後需重新辨識；接收器名稱可能只顯示 USB Receiver。\n\n同時修正發行清單在同步站點時重新產生時間戳的問題，所有發行站使用同一份 DMG、latest.json 與 SHA256SUMS。\n\n支援 macOS 13 以上，包含 Apple Silicon 與 Intel 雙架構。474 項 App 自測與 24 項發行流程測試通過。此版本使用動態載入的 HID 私有介面，未來 macOS 更新後可能需要調整。",
+  "notes": "# MirrorX 2.5.3\n\n## 新功能\n\n- 在「羅技fn」視窗整合 DPI 與滾輪控制分頁。\n- 為每支可辨識的滑鼠新增垂直滾輪速度倍率：0.5×–3.0×，每格 0.25×，預設 1.0×。設定保存在 MirrorX，程式執行時生效；不寫入滑鼠。水平捲動及觸控板、Magic Mouse 等連續捲動不受影響。\n- 為相容的 Logitech PRO 2 提供目前內建 DPI 檔位的 X/Y DPI 讀取、調整與儲存。\n\n## 修正\n\n- 修正背景讀取滑鼠 DPI 時 HID 回呼生命週期造成的崩潰。\n- 保留舊版滾輪設定相容性；未設定倍率的規則使用 1.0×。\n\n完整安裝方式與輔助使用權限設定請見 README。",
   "dmg": {
-    "name": "MirrorX-2.5.0.dmg",
-    "url": "https://github.com/michelle0812/mirrorx-releases/releases/download/v2.5.0/MirrorX-2.5.0.dmg",
-    "size": 3302415,
-    "sha256": "0330d76d129c58240ac680bddfabb61c23398453fc3f2632ebf5d52410b83f7f"
+    "name": "MirrorX-2.5.3.dmg",
+    "url": "https://github.com/michelle0812/mirrorx-releases/releases/download/v2.5.3/MirrorX-2.5.3.dmg",
+    "size": 3554132,
+    "sha256": "ff095191d7b14a1a1125b3e4381d28233db09086eca72f56bb520d3c49c00a8d"
   }
 }
